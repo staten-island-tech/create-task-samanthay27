@@ -3,6 +3,7 @@ import { fortune } from './array';
 
 const DOMselectors = {
     changetheme: document.querySelector("#changetheme"),
+    form: document.querySelector(".form")
 };
 
 DOMselectors.changetheme.addEventListener("click", function (){
@@ -14,8 +15,6 @@ DOMselectors.changetheme.addEventListener("click", function (){
     document.body.classList.remove("greentheme");
    }
 });
-
-
 
 console.log("klfsa");
 console.log(fortune);

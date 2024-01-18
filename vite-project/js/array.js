@@ -1,7 +1,7 @@
 const fortune = [
     {
         generalfortune: "Bad",
-        workfortune: "",
+        workfortune: "You might want to work harder",
         studyfortune: "",
         lovefortune: "",
     },
@@ -13,7 +13,7 @@ const fortune = [
     },
     {
         generalfortune: "Excellent",
-        workfortune: "",
+        workfortune: "Hard work will reap desireable results",
         studyfortune: "",
         lovefortune: "",
     },
