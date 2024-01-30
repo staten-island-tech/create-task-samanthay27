@@ -1,125 +1,94 @@
-const fortune = [
+const fooditem = [
     {
-        generalfortune: "Bad",
-        workfortune: "You might want to work harder",
-        studyfortune: "",
-        lovefortune: "",
+        name: "Sparkling Water",
+        difficulty: "1",
+        description: "x",
+        button: `<button class= "sparklingwaterrecipe">Make Sparkling Water</button>`
+    },    
+    {
+        name: "Ice Cream",
+        difficulty: "2",
+        description: "x",
+        button: `<button class ="icecreamrecipe">Make Ice Cream</button>`
     },
     {
-        generalfortune: "Bad",
-        workfortune: "",
-        studyfortune: "",
-        lovefortune: "",
+        name: "Tomato Soup",
+        difficulty: "x",
+        description: "x",
+        button: `<button class ="tomatosouprecipe">Make Tomato Soup</button>`
     },
     {
-        generalfortune: "Excellent",
-        workfortune: "Hard work will reap desireable results",
-        studyfortune: "",
-        lovefortune: "",
+        name: "Greek Salad",
+        difficulty: "x",
+        description: "x",
+        button: `<button class ="greeksaladrecipe">Make Greek Salad</button>`
+    },    
+    {
+        name: "Shrimp Cocktail",
+        difficulty: "x",
+        description: "x",
+        button: `<button class ="shrimpcocktailrecipe">Make Shrimp Cocktail</button>`
+    },    
+    {
+        name: "Sushi Platter",
+        difficulty: "x",
+        description: "x",
+        button: `<button class= "sushiplatterrecipe">Make Sushi Platter</button>`
+    },    
+    {
+        name: "Salmon Fillet",
+        difficulty: "x",
+        description: "x",
+        button: `<button class= "salmonfilletrecipe">Make Salmon Fillet</button>`
+    },    
+    {
+        name: "Crepes",
+        difficulty: "x",
+        description: "x",
+        button: `<button class= "crepesrecipe">Make Crepes</button>`
+    },      
+    {
+        name: "Buttered Lobster",
+        difficulty: "x",
+        description: "x",
+        button: `<button class= "butteredlobsterrecipe">Make Buttered Lobster</button>`
     },
     {
-        generalfortune: "Bad",
-        workfortune: "",
-        studyfortune: "",
-        lovefortune: "",
+        name: "Chocolate Truffles",
+        difficulty: "x",
+        description: "x",
+        button: `<button class= "chocolatetrufflesrecipe">Make Chocolate Truffles</button>`
+    },    
+    {
+        name: "Rack Of Lamb",
+        difficulty: "x",
+        description: "x",
+        button: `<button class= "rackoflambrecipe">Make Rack Of Lamb</button>`
     },
     {
-        generalfortune: "Bad",
-        workfortune: "",
-        studyfortune: "",
-        lovefortune: "",
+        name: "Macaroons",
+        difficulty: "x",
+        description: "x",
+        button: `<button class= "macaroonsrecipe">Make Macaroons</button>`
     },
     {
-        generalfortune: "Great",
-        workfortune: "",
-        studyfortune: "",
-        lovefortune: "",
-    },    
-    {
-        generalfortune: "Good",
-        workfortune: "",
-        studyfortune: "",
-        lovefortune: "",
-    },    
-    {
-        generalfortune: "Good",
-        workfortune: "",
-        studyfortune: "",
-        lovefortune: "",
-    },    
-    {
-        generalfortune: "Good",
-        workfortune: "",
-        studyfortune: "",
-        lovefortune: "",
-    },    
-    {
-        generalfortune: "Excellent",
-        workfortune: "",
-        studyfortune: "",
-        lovefortune: "",
-    },    
-    {
-        generalfortune: "Great",
-        workfortune: "",
-        studyfortune: "",
-        lovefortune: "",
-    },    
-    {
-        generalfortune: "Great",
-        workfortune: "",
-        studyfortune: "",
-        lovefortune: "",
-    },    
-    {
-        generalfortune: "Bad",
-        workfortune: "",
-        studyfortune: "",
-        lovefortune: "",
+        name: "Mango Cheesecake",
+        difficulty: "",
+        description: "x",
+        button: `<button class= "mangocheesecakerecipe">Make Mango Cheesecake</button>`
     },
     {
-        generalfortune: "Excellent",
-        workfortune: "",
-        studyfortune: "",
-        lovefortune: "",
-    },    
-    {
-        generalfortune: "Excellent",
-        workfortune: "",
-        studyfortune: "",
-        lovefortune: "",
-    },    
-    {
-        generalfortune: "Great",
-        workfortune: "",
-        studyfortune: "",
-        lovefortune: "",
-    },    
-    {
-        generalfortune: "Good",
-        workfortune: "",
-        studyfortune: "",
-        lovefortune: "",
-    },    
-    {
-        generalfortune: "Great",
-        workfortune: "",
-        studyfortune: "",
-        lovefortune: "",
-    },    
-    {
-        generalfortune: "Good",
-        workfortune: "",
-        studyfortune: "",
-        lovefortune: "",
-    },    
-    {
-        generalfortune: "Excellent",
-        workfortune: "",
-        studyfortune: "",
-        lovefortune: "",
+        name: "Pasta",
+        difficulty: "x",
+        description: "x",
+        button: `<button class= "pastarecipe">Make Pasta</button>`
     },
-
+    {
+        name: "Wagyu",
+        difficulty: "x",
+        description: "x",
+        button: `<button class= "wagyurecipe">Make Wagyu</button>`
+    },
 ]
 
-export {fortune}
+export {fooditem}

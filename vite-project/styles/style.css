@@ -1,58 +1,76 @@
 :root {
-  --red1: #ffdab9;
-  --red2: #fbc4ab;
-  --red3: #f8ad9d;
-  --red4: #f4978e;
-  --red5: #f08080;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
 
-  --green1: #edeec9;
-  --green2: #dde7c7;
-  --green3: #bfd8bd;
-  --green4: #98c9a3;
-  --green5: #77bfa3;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
-  --black: #000;
-
-  --primary: var(--red1);
-  --secondary: var(--red2);
-  --tertiary: var(--red3);
-  --quaternary: var(--red4);
-  --quinary: var(--red5);
-
-  --h1: 7.594rem;
-  --h2: 5.063rem;
-  --h3: 3.375rem;
-  --h4: 2.25rem;
-  --h5: 1.5rem;
+  --h1: 5rem;
+  --h2: 4rem;
+  --h3: 3rem;
+  --h4: 2rem;
+  --h5: 1rem; 
 }
 
-.redtheme{
-  --primary: var(--red1);
-  --secondary: var(--red2);
-  --tertiary: var(--red3);
-  --quaternary: var(--red4);
-  --quinary: var(--red5);
-  --senary: var(--black);
-};
-
-.greentheme{
-  --primary:var(--green1);
-  --secondary: var(--green2);
-  --tertiary: var(--green3);
-  --quaternary: var(--green4);
-  --quinary: var(--green5);
-  --senary: var(--black);
+h1{
+  font-size: var(--h1);
 }
 
-.header{
-  height: 100px;
-  background-color: var(--primary);
-  border-radius: 24px;
+h2{
+  font-size: var(--h2);
+}
+
+h3{
+  font-size: var(--h3);
+}
+
+h4{
+  font-size: var(--h4);
+}
+
+h5{
+  font-size: var(--h5);
+}
+
+h1,h2,h3,h4,h5 {
   align-items: center;
+  line-height: 1.1;
 }
 
-#changetheme{
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+.cardcontainer{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.recipe{
+  padding: 2%;
+  margin: 2rem 2rem;
+  height: 400px;
+  width: 300px;
   border-radius: 12px;
-  border-color: var(--quinary);
-  padding: 12px;
+}
+
+.submitsparklingwater, .submiticecream{
+  align-items: center;
 }
