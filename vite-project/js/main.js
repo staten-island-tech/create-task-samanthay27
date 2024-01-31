@@ -133,7 +133,6 @@ function sparklingwateringredients() {
   DOMSelectors.cardcontainer.insertAdjacentHTML(
     'beforeend',
     `<div class = "card">
-    <h3>Time Limit: 10 seconds</h3>
     <h1>Sparkling Water</h1>
     <h2>Ingredients:</h2>
     <h4>Sparkling Water</h4>
@@ -205,7 +204,6 @@ function icecreamingredients() {
   DOMSelectors.cardcontainer.insertAdjacentHTML(
     'beforeend',
     `<div class = "card">
-    <h3>Time Limit: 10 seconds</h3>
     <h1>Ice Cream</h1>
     <h2>Ingredients:</h2>
     <h4>2 Scoops of Matcha Ice Cream</h4>
@@ -293,11 +291,10 @@ function tomatosoupstep1(){
   DOMSelectors.cardcontainer.insertAdjacentHTML(
    'beforeend',
    `<div class = "card">
-   <h3>Time Limit: 10 seconds</h3>
    <h1>Tomato Soup</h1>
    <h2>Step 1:</h2>
    <h2>Melt in half a stick of butter </h2>
-   <h2>Saute medium diced onions until soft and golden</h2>
+   <h2>Saute diced onions until soft and golden</h2>
    <h2>Add 3 minced garlic cloves</h2>
    <button class = "tomatosoupstep1skipbutton">Skip</button>
    </div>`
@@ -321,8 +318,57 @@ function tomatosoupstep1questions() {
     <button class = "tomatosoupbutterquantity">Whole Cup</button>
     <button class = "tomatosoupbutterquantity">Half Stick</button>
     <button class = "tomatosoupbutterquantity">Whole Stick</button>
-    <h2>What do you add next?</h2>
-    
+    <h2>How do you cut the onion?</h2>
+    <button class = "tomatosouponioncut">Minced</button>
+    <button class = "tomatosouponioncut">Rings</button>
+    <button class = "tomatosouponioncut">Uncut</button>
+    <button class = "tomatosouponioncut">Diced</button>
+    <h2>How many garlic cloves do you add?</h2>
+    <button class = "tomatosoupgarlicquantity">1/2 Clove</button>
+    <button class = "tomatosoupgarlicquantity">1 Clove</button>
+    <button class = "tomatosoupgarlicquantity">2 Cloves</button>
+    <button class = "tomatosoupgarlicquantity">3 Cloves</button>
+    <button class = "submittomatosoupstep1">Next Step</button>
+    </div>`
+  )
+}
+
+function tomatosoupstep2() {
+  clearHTML()
+  DOMSelectors.cardcontainer.insertAdjacentHTML(
+    'beforeend',
+    `<div class = "card">
+    <h1>Tomato Soup</h1>
+    <h2>Step 2:</h2>
+    <h2>Add 56 ounces of crushed tomatoes, chicken stock, chopped basil, sugar, and black pepper</h2>
+    <h2>Bring the mixture to a boil, reduce heat, partially cover, then simmer for 10 minutes</h2>
+    <h2>Blend with an imersion blender</h2>
+    <button class = "tomatosoupstep2skipbutton">Skip</button>
+    </div>`
+  )
+}
+
+function tomatosoupstep3(){
+  clearHTML()
+  DOMSelectors.cardcontainer.insertAdjacentHTML(
+    'beforeend',
+    `<div class = "card">
+    <h1>Tomato Soup</h1>
+    <h2>Step 3:</h2>
+    <h2>Add heavy cream and shredded parmesan cheese and simmer for 3 minutes</h2>
+    <button class = "tomatosoupstep3skipbutton">Skip</button>
+    </div>`
+  )
+}
+
+function tomatosoupstep4(){
+  clearHTML()
+  DOMSelectors.cardcontainer.insertAdjacentElement(
+    'beforeend',
+    `<div class = "card">
+    <h1>Tomato Soup</h1>
+    <h2>Step 4:</h2>
+    <h2>Serve with basil leaves and more parmesan cheese</h2>
     </div>`
   )
 }
@@ -361,6 +407,13 @@ function macaroonstep1() {
 
 function mangocheesecakestep1() {
   clearHTML()
+  DOMSelectors.cardcontainer.insertAdjacentHTML(
+    'beforeend',
+    `<div class = "card">
+    <h1>Mango Cheesecake</h1>
+    <h2></h2>
+    </div>`
+  )
 }
 
 function pastastep1() {
