@@ -305,7 +305,7 @@ function tomatosoupstep1(){
 
 function tomatosoupstep1questions() {
   clearHTML()
-  DOMSelectors.cardcontainer.insertAdjacentElement(
+  DOMSelectors.cardcontainer.insertAdjacentHTML(
     'beforeend',
     `<div class = "card">
     <h2>What do you add first?</h2>
@@ -331,6 +331,9 @@ function tomatosoupstep1questions() {
     <button class = "submittomatosoupstep1">Next Step</button>
     </div>`
   )
+  DOMSelectors.submittomatosoupstep1 = document.querySelector('.submittomatosoupstep1')
+  DOMSelectors.submittomatosoupstep1.addEventListener('click', tomatosoupstep2)
+  //change this
 }
 
 function tomatosoupstep2() {
@@ -346,6 +349,31 @@ function tomatosoupstep2() {
     <button class = "tomatosoupstep2skipbutton">Skip</button>
     </div>`
   )
+  DOMSelectors.tomatosoupstep2skipbutton = document.querySelector('.tomatosoupstep2skipbutton')
+  DOMSelectors.tomatosoupstep2skipbutton.addEventListener('click', tomatosoupstep2questions)
+  //change this 
+}
+
+function tomatosoupstep2questions() {
+  clearHTML()
+  DOMSelectors.cardcontainer.insertAdjacentHTML(
+    'beforeend',
+    `<div class = "card">
+    <h2>What tomato-related ingredient do you add?</h2>
+    <button class = "tomatosouptomatoingredient">Crushed Tomatoes</button>
+    <button class = "tomatosouptomatoingredient">Tomato Sauce</button>
+    <button class = "tomatosouptomatoingredient">Whole Tomatoes</button>
+    <h2>What other ingredients do you add? (Select all that apply)</h2>
+    <h2> White Pepper: <input type="checkbox"/><br />
+    Black Pepper: <input type="checkbox"/><br />
+    White Pepper: <input type="checkbox"/><br />
+    Chicken Stock: <input type="checkbox"/><br />
+    Bullion Cubes: <input type="checkbox"/><br /></h2>
+    <button class = "submittomatosoupstep2">Next Step</button>
+    </div>`
+  )
+  DOMSelectors.submittomatosoupstep2 = document.querySelector('.submittomatosoupstep2')
+  DOMSelectors.submittomatosoupstep2.addEventListener('click',tomatosoupstep3)
 }
 
 function tomatosoupstep3(){
@@ -359,18 +387,39 @@ function tomatosoupstep3(){
     <button class = "tomatosoupstep3skipbutton">Skip</button>
     </div>`
   )
+  DOMSelectors.tomatosoupstep3skipbutton = document.querySelector('.tomatosoupstep3skipbutton')
+  DOMSelectors.tomatosoupstep3skipbutton.addEventListener('click',tomatosoupstep3questions)
+  //change this later
+}
+
+function tomatosoupstep3questions(){
+  clearHTML()
+  DOMSelectors.cardcontainer.insertAdjacentHTML(
+    'beforeend',
+    `<div class = "card">
+    <h2>peepeepoopoo</h2>
+    <button class = "submittomatosoupstep3">Next Step</button>
+    </div>`
+  )
+  DOMSelectors.submittomatosoupstep3 = document.querySelector('.submittomatosoupstep3')
+  DOMSelectors.submittomatosoupstep3.addEventListener('click',tomatosoupstep4)
+  //change this
 }
 
 function tomatosoupstep4(){
   clearHTML()
-  DOMSelectors.cardcontainer.insertAdjacentElement(
+  DOMSelectors.cardcontainer.insertAdjacentHTML(
     'beforeend',
     `<div class = "card">
     <h1>Tomato Soup</h1>
     <h2>Step 4:</h2>
     <h2>Serve with basil leaves and more parmesan cheese</h2>
+    <button class = "tomatosoupstep4skipbutton">Next Step</button>
     </div>`
   )
+  DOMSelectors.tomatosoupstep4skipbutton = document.querySelector('.tomatosoupstep4skipbutton')
+  DOMSelectors.tomatosoupstep4skip.addEventListener('click',)
+  //change this 
 }
 
 function greeksaladstep1( ){
@@ -411,7 +460,9 @@ function mangocheesecakestep1() {
     'beforeend',
     `<div class = "card">
     <h1>Mango Cheesecake</h1>
-    <h2></h2>
+    <h2>Step 1:</h2>
+    <h3>Crush graham crackers in a food processor</h3>
+    
     </div>`
   )
 }
